@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+<OfxPlugin name="de.magix:Colorization">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>Colorização VEGAS</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\IA</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>Colore filmagens em preto e branco.</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="ModelNotFound">Este plug-in requer dados adicionais. Por favor, instale o pacote VEGAS IA, disponível para download em www.vegascreativesoftware.com.</OfxMessage>
+			
+			<OfxParamTypeChoice name="Localization">
+				<OfxParamPropChoiceOption>Este plug-in requer dados adicionais. Por favor, instale o pacote VEGAS IA, disponível para download em www.vegascreativesoftware.com.</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Preprocess">
+				<OfxParamPropChoiceOption>Nenhum</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Apenas estimativa (não aplicar à edição)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Aplicar à edição</OfxParamPropChoiceOption>
+				<OfxPropLabel>Melhoria da luminância</OfxPropLabel>
+				<OfxPropShortLabel>Melhoria da luminância</OfxPropShortLabel>
+				<OfxPropLongLabel>Melhoria da luminância</OfxPropLongLabel>
+				<OfxParamPropHint>Pré-processamento para melhorar a luminância.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeChoice name="Precision">
+				<OfxParamPropChoiceOption>Baixo</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Médio</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Alto</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Corresponder ao tamanho da entrada</OfxParamPropChoiceOption>
+				<OfxPropLabel>Precisão</OfxPropLabel>
+				<OfxPropShortLabel>Precisão</OfxPropShortLabel>
+				<OfxPropLongLabel>Precisão</OfxPropLongLabel>
+				<OfxParamPropHint>Equilíbrio entre precisão e velocidade.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeBoolean name="InvertColorA">
+				<OfxPropLabel>Inverter verde e vermelho</OfxPropLabel>
+				<OfxPropShortLabel>Inverter verde e vermelho</OfxPropShortLabel>
+				<OfxPropLongLabel>Inverter verde e vermelho</OfxPropLongLabel>
+				<OfxParamPropHint>Inverte o canal &apos;a&apos; (verde e vermelho).</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+			
+			<OfxParamTypeBoolean name="InvertColorB">
+				<OfxPropLabel>Inverter azul e amarelo</OfxPropLabel>
+				<OfxPropShortLabel>Inverter azul e amarelo</OfxPropShortLabel>
+				<OfxPropLongLabel>Inverter azul e amarelo</OfxPropLongLabel>
+				<OfxParamPropHint>Inverte o canal &apos;b&apos; (azul e amarelo).</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+
+			<OfxParamTypeDouble name="ColorShiftA">
+				<OfxPropLabel>Alternar entre verde e vermelho</OfxPropLabel>
+				<OfxPropShortLabel>Alternar entre verde e vermelho</OfxPropShortLabel>
+				<OfxPropLongLabel>Alternar entre verde e vermelho</OfxPropLongLabel>
+				<OfxParamPropHint>Alterna o centro de cor para o canal &apos;a&apos; (verde e vermelho).</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="ColorShiftB">
+				<OfxPropLabel>Alternar entre azul e amarelo</OfxPropLabel>
+				<OfxPropShortLabel>Alternar entre azul e amarelo</OfxPropShortLabel>
+				<OfxPropLongLabel>Alternar entre azul e amarelo</OfxPropLongLabel>
+				<OfxParamPropHint>Alterna o centro de cor para o canal &apos;a&apos; (azul e amarelo).</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationA">
+				<OfxPropLabel>Ganho em verde e vermelho</OfxPropLabel>
+				<OfxPropShortLabel>Ganho em verde e vermelho</OfxPropShortLabel>
+				<OfxPropLongLabel>Ganho em verde e vermelho</OfxPropLongLabel>
+				<OfxParamPropHint>Ganho no canal &apos;a&apos; (verde e vermelho).</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationB">
+				<OfxPropLabel>Ganho em azul e amarelo</OfxPropLabel>
+				<OfxPropShortLabel>Ganho em azul e amarelo</OfxPropShortLabel>
+				<OfxPropLongLabel>Ganho em azul e amarelo</OfxPropLongLabel>
+				<OfxParamPropHint>Ganho no canal &apos;a&apos;(azul e amarelo)</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+<OfxPlugin name="de.magix:StyleTransfer">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>Transferência de estilo VEGAS</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\IA</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>Transfere a aparência de pinturas famosas para clipes fornecidos pelo usuário.</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="Model Message">Este plug-in requer dados adicionais. Por favor, instale o pacote VEGAS IA, disponível para download em www.vegascreativesoftware.com.</OfxMessage>
+			
+			<OfxParamTypeChoice name="Model not found">
+				<OfxParamPropChoiceOption>Este plug-in requer dados adicionais. Por favor, instale o pacote VEGAS IA, disponível para download em www.vegascreativesoftware.com.</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Style">
+				<OfxParamPropChoiceOption>Self Portrait (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Night Alley Walk (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Great Wave of Kanagawa (Hokusai)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Fruit (Hunt)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Light (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Small Worlds 1 (Kandinsky)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Floral pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Sunrise Flowers (Lambert)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Abstract Painting (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Black and White (KLH)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Starry Night (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Pandorica Opens (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Weeping Woman (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Bark pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Font pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Leaf pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Rick and Morty</OfxParamPropChoiceOption>
+				<OfxPropLabel>Estilo</OfxPropLabel>
+				<OfxPropShortLabel>Estilo</OfxPropShortLabel>
+				<OfxPropLongLabel>Estilo</OfxPropLongLabel>
+				<OfxParamPropHint>Alterna entre os diferentes modelos de estilo.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeDouble name="Mean Red">
+				<OfxPropLabel>Média do vermelho</OfxPropLabel>
+				<OfxPropShortLabel>Média do vermelho</OfxPropShortLabel>
+				<OfxPropLongLabel>Média do vermelho</OfxPropLongLabel>
+				<OfxParamPropHint>Adiciona o valor médio do vermelho.</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Green">
+				<OfxPropLabel>Média do verde</OfxPropLabel>
+				<OfxPropShortLabel>Média do verde</OfxPropShortLabel>
+				<OfxPropLongLabel>Média do verde</OfxPropLongLabel>
+				<OfxParamPropHint>Adiciona o valor médio do verde.</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Blue">
+				<OfxPropLabel>Média do azul</OfxPropLabel>
+				<OfxPropShortLabel>Média do azul</OfxPropShortLabel>
+				<OfxPropLongLabel>Média do azul</OfxPropLongLabel>
+				<OfxParamPropHint>Adiciona o valor médio do azul</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeChoice name="Details">
+				<OfxParamPropChoiceOption>Baixo</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Médio</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Alto</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Original</OfxParamPropChoiceOption>
+				<OfxPropLabel>Detalhes</OfxPropLabel>
+				<OfxPropShortLabel>Detalhes</OfxPropShortLabel>
+				<OfxPropLongLabel>Detalhes</OfxPropLongLabel>
+				<OfxParamPropHint>Alterna entre diferentes níveis de detalhe.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+
+</OfxImageEffectResource>

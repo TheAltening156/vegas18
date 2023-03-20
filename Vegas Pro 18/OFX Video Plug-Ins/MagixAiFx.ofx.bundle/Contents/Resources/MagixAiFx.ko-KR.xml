@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+<OfxPlugin name="de.magix:Colorization">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS 색 입히기</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>흑백 사진에 색 입히기.</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="ModelNotFound">이 플러그인을 사용하시려면 추가 데이터가 필요합니다. www.vegascreativesoftware.com 에서 VEGAS AL 묶음을 다운로드 후 설치해 주십시오. </OfxMessage>
+			
+			<OfxParamTypeChoice name="Localization">
+				<OfxParamPropChoiceOption>이 플러그인을 사용하시려면 추가 데이터가 필요합니다. www.vegascreativesoftware.com 에서 VEGAS AL 묶음을 다운로드 후 설치해 주십시오. </OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Preprocess">
+				<OfxParamPropChoiceOption>없음</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>추정치만 (출력에는 적용되지 않음)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>출력에 적용</OfxParamPropChoiceOption>
+				<OfxPropLabel>광도 향상</OfxPropLabel>
+				<OfxPropShortLabel>광도 향상</OfxPropShortLabel>
+				<OfxPropLongLabel>광도 향상</OfxPropLongLabel>
+				<OfxParamPropHint>광도를 향상하는 중입니다.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeChoice name="Precision">
+				<OfxParamPropChoiceOption>낮음</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>중간</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>높은</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>입력 크기 일치</OfxParamPropChoiceOption>
+				<OfxPropLabel>정밀도</OfxPropLabel>
+				<OfxPropShortLabel>정밀도</OfxPropShortLabel>
+				<OfxPropLongLabel>정밀도</OfxPropLongLabel>
+				<OfxParamPropHint>정확도와 속도를 서로 절충합니다.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeBoolean name="InvertColorA">
+				<OfxPropLabel>녹색과 적색 반전</OfxPropLabel>
+				<OfxPropShortLabel>녹색과 적색 반전</OfxPropShortLabel>
+				<OfxPropLongLabel>녹색과 적색 반전</OfxPropLongLabel>
+				<OfxParamPropHint>채널 &apos;a&apos; 반전 (녹색과 적색).</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+			
+			<OfxParamTypeBoolean name="InvertColorB">
+				<OfxPropLabel>청색과 황색 반전 </OfxPropLabel>
+				<OfxPropShortLabel>청색과 황색 반전 </OfxPropShortLabel>
+				<OfxPropLongLabel>청색과 황색 반전 </OfxPropLongLabel>
+				<OfxParamPropHint>채널 &apos;b&apos; 반전 (청색과 황색)</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+
+			<OfxParamTypeDouble name="ColorShiftA">
+				<OfxPropLabel>녹색과 적색 교체</OfxPropLabel>
+				<OfxPropShortLabel>녹색과 적색 교체</OfxPropShortLabel>
+				<OfxPropLongLabel>녹색과 적색 교체</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos;채널 색상 센터 교체 (녹색과 적색)</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="ColorShiftB">
+				<OfxPropLabel>청색과 황색 교체</OfxPropLabel>
+				<OfxPropShortLabel>청색과 황색 교체</OfxPropShortLabel>
+				<OfxPropLongLabel>청색과 황색 교체</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;b&apos;채널 색상 황색 교체 (청색과 황색)</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationA">
+				<OfxPropLabel>녹색과 적색 게인</OfxPropLabel>
+				<OfxPropShortLabel>녹색과 적색 게인</OfxPropShortLabel>
+				<OfxPropLongLabel>녹색과 적색 게인</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; 채널 게인(녹색과 적색)</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationB">
+				<OfxPropLabel>청색과 황색 게인</OfxPropLabel>
+				<OfxPropShortLabel>청색과 황색 게인</OfxPropShortLabel>
+				<OfxPropLongLabel>청색과 황색 게인</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; 채널 게인 (청색과 황색)</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+<OfxPlugin name="de.magix:StyleTransfer">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS 스타일 변환</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>사용자가 제공한 클립의 외형을 유명한 예술 작품의 스타일로 변환합니다. </OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="Model Message">이 플러그인을 사용하시려면 추가 데이터가 필요합니다. www.vegascreativesoftware.com 에서 VEGAS AL 묶음을 다운로드 후 설치해 주십시오. </OfxMessage>
+			
+			<OfxParamTypeChoice name="Model not found">
+				<OfxParamPropChoiceOption>이 플러그인을 사용하시려면 추가 데이터가 필요합니다. www.vegascreativesoftware.com 에서 VEGAS AL 묶음을 다운로드 후 설치해 주십시오. </OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Style">
+				<OfxParamPropChoiceOption>Self Portrait (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Night Alley Walk (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Great Wave of Kanagawa (Hokusai)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Fruit (Hunt)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Light (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Small Worlds 1 (Kandinsky)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Floral pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Sunrise Flowers (Lambert)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Abstract Painting (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Black and White (KLH)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Starry Night (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Pandorica Opens (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Weeping Woman (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Bark pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Font pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Leaf pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Rick and Morty</OfxParamPropChoiceOption>
+				<OfxPropLabel>스타일</OfxPropLabel>
+				<OfxPropShortLabel>스타일</OfxPropShortLabel>
+				<OfxPropLongLabel>스타일</OfxPropLongLabel>
+				<OfxParamPropHint>다른 스타일 모델으로 바꾸기.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeDouble name="Mean Red">
+				<OfxPropLabel>적색 평균값</OfxPropLabel>
+				<OfxPropShortLabel>적색 평균값</OfxPropShortLabel>
+				<OfxPropLongLabel>적색 평균값</OfxPropLongLabel>
+				<OfxParamPropHint>적색 평균값 추가 </OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Green">
+				<OfxPropLabel>녹색 평균값</OfxPropLabel>
+				<OfxPropShortLabel>녹색 평균값</OfxPropShortLabel>
+				<OfxPropLongLabel>녹색 평균값</OfxPropLongLabel>
+				<OfxParamPropHint>녹색 평균값 추가</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Blue">
+				<OfxPropLabel>청색 평균값</OfxPropLabel>
+				<OfxPropShortLabel>청색 평균값</OfxPropShortLabel>
+				<OfxPropLongLabel>청색 평균값</OfxPropLongLabel>
+				<OfxParamPropHint>청색 평균값</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeChoice name="Details">
+				<OfxParamPropChoiceOption>낮음</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>중간</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>높은</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>원본</OfxParamPropChoiceOption>
+				<OfxPropLabel>세부 사항</OfxPropLabel>
+				<OfxPropShortLabel>세부 사항</OfxPropShortLabel>
+				<OfxPropLongLabel>세부 사항</OfxPropLongLabel>
+				<OfxParamPropHint>다른 디테일 레벨로 전환.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+
+</OfxImageEffectResource>

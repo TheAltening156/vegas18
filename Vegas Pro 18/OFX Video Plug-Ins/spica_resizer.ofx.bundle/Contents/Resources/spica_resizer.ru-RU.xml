@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_upscale">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS эффект повышения качества</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS эффект повышения качества</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS эффект повышения качества</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Высококачественный редактор размера VEGAS</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="Scale">
+					<OfxPropLabel>Масштаб</OfxPropLabel>
+			        <OfxPropShortLabel>Масштаб</OfxPropShortLabel>
+			        <OfxPropLongLabel>Масштаб</OfxPropLongLabel>
+					<OfxParamPropHint>Устанавливает значение шкалы изменения размера.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Чувствительность шума</OfxPropLabel>
+			        <OfxPropShortLabel>Чувствительность шума</OfxPropShortLabel>
+			        <OfxPropLongLabel>Чувствительность шума</OfxPropLongLabel>
+					<OfxParamPropHint>Уровень шума изображения</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Включить улучшение</OfxPropLabel>
+			        <OfxPropShortLabel>Включить улучшение</OfxPropShortLabel>
+			        <OfxPropLongLabel>Включить улучшение</OfxPropLongLabel>
+					<OfxParamPropHint>Включение или выклчение умного улучшения</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Фатальная ошибка плагина
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    Указанный формат кадра не поддерживается. Пожалуйста, выберите 8-битный или 32-битный RGBA с плавающей точкой в настройках проекта.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Плагину требуется OpenCL для работы
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Ошибка OpenCL
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    Недостаточно памяти OpenCL GPU. Пожалуйста, попробуйте еще раз с изображениями в более низком разрешении или с меньшим количеством видео эффектов OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    Слишком большое разрешение проекта. Пожалуйста, попробуйте еще раз с изображениями более низкого разрешения.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

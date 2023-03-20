@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title> Stereo Delay </title>
+<meta name="Generator" content="Author-it">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Keywords" content="Stereo Delay">
+<script type="text/javascript" src="dhtml_toc.js"></script>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" href="stylesheet.css">
+<!-- <link rel="stylesheet" href="44.css"> -->
+<base target="main">
+</head>
+
+<body onload="loadParent();if (isTOCLoaded()) {highlight('27663')}" text="#0F0F0F" link="#0080FF" alink="#FF8080" vlink="#6000FF">
+<table border="0" width="100%">
+ <tr valign="top"><td height="100%" > 
+ <h1 class="heading1">Stereo Delay</h1>
+<p class="bodytext">The stereo delay is a simple too for typical bread and butter delay effects. The stereo delay offers the &quot;analog algorithm&quot;, which features the sound of echo devices of yesteryear.</p>
+<p class="bild"><img src="27665.png" vspace="0" hspace="0" align="bottom" border="0"></p>
+<a name="o27664"></a><h2 class="heading2">Stereo delay parameters</h2>
+<p class="bodytext"><strong class="specialbold">IN / OUT:</strong> Here you can set the input and output level.</p>
+<p class="bodytext"><strong class="specialbold">Mode:</strong> This selects between the essential algorithms.</p>
+<p class="bodytext"><strong class="specialbold">Digital:</strong> Normal, transparent delay</p>
+<p class="bodytext"><strong class="specialbold">- Analog tape:</strong> Analog tape delay simulation. In this mode, a band echo is simulated with a typical compression and saturation behavior, including phase shifts with high feedback settings.</p>
+<p class="bodytext"><strong class="specialbold">Analog BBD:</strong> Simulation of a bucket brigade delay (BBD, bucket brigade delay). These devices, which originate from the pre-digital era, used analog building blocks for storage. The signal was held for a short time in a relatively simple circuit and then moved on to the next. This &quot;bucket brigade&quot; principle created a longer signal delay. BBDs create different delay times by varying the system beat (clock), meaning &nbsp;that for short delays the beat is faster, and for longer it is slower.</p>
+<ul class="listbullet"><li class="listbullet"><strong class="specialbold">Tempo sync:</strong> If this button is active, the plug-in is directed at the host/sequencer tempo. In this mode, changes are made to the delay period via the L/R delay using the musical snap grid (e.&nbsp;g. 1/4 note).</li><li class="listbullet"><strong class="specialbold">Delay L/Delay R:</strong> Specify the delay period for the left and right channels here.</li><li class="listbullet"><strong class="specialbold">Damping:</strong> This specifies the cut-off frequency at which the highs are dampened during the delay. This useful&nbsp; for making the delays reverberate more naturally or for creating special effects (reggae/dub-style effects).</li><li class="listbullet"><strong class="specialbold">Feedback:</strong> This parameter regulates the internal amplitude of the delayed signal that is fed back to the input. In &quot;Digital&quot; mode, this process is completely transparent; in &quot;Analog&quot;, on the other hand, higher values, a very loud input signal, or the sum of these will make the use of dynamics compression audible. In both modes, the nullification of the feedback parameter is in the center of the fader. To the right, the plug-in works in &quot;Dual delay&quot; mode (both sides work independently), and to the left, &quot;Ping pong&quot; mode will be activated (the delayed signal alternates between the left and right sides).</li></ul><ul class="listbulletlast"><li class="listbulletlast"><strong class="specialbold">Mix:</strong> Regulates the mix ratio of the original signal and the delayed portion.</li></ul><p class="bodytext"><strong class="specialbold">Tweak </strong></p>
+<ul class="listbullet"><li class="listbullet"><strong class="specialbold">Feedback Low Cut:</strong> This control sets the filter frequency of a high-pass filter for the &quot;feedback&quot;. Signal components below this frequency will be filtered out. </li><li class="listbullet"><strong class="specialbold">Tape / BBD Noise:</strong> Here you can control system noise for both analog modes. Especially if you work with high feedback rates, noise can create quick or stable oscillation, making the effect even more authentic.</li><li class="listbullet"><strong class="specialbold">BBD Stages:</strong> Here you can determine the count of For very long delays, chips with many memory cells are used. This explains why bucket brigade echoes with long delays sound so muffled and dirty. Please keep in mind that the shorter the delay, the faster is the &quot;virtual&quot; system beat. For performance reasons, the system beat is limited. The limit is displayed below the delay control (with deactivated &quot;tempo sync&quot;) as soon as it is reached, e.&nbsp;g. 46 ms <strong class="specialbold">(min)</strong>.</li><li class="listbullet"><strong class="specialbold">BBD Compander:</strong> Here you can simulate Compander settings. Due to per-cell loss, BBDs have low system dynamics. For this reason, some have an integrated compander (compression at the input, counter-expansion at the output). Strong compander settings interact noticeably with the input signal, especially with high feedback, because the input effects the expansion ration at the output, even when there is no signal at the input.</li></ul><ul class="listbulletlast"><li class="listbulletlast"><strong class="specialbold">BBD Clock Drift:</strong> This parameter can add drift (during audible jitter effects) by slightly varying the system beat of BBD cells. It works similarly to an LFO, but is randomized.</li></ul><p class="bild"><img src="30452.png" vspace="0" hspace="0" align="bottom" border="0"></p>
+
+
+ </td></tr>
+ <tr valign="bottom"><td>
+<!-- Insert Your Footer Here -->
+ </td></tr>
+</table>
+</body>
+</html>

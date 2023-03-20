@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_upscale">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Inteligentne skalowanie VEGAS</OfxPropLabel>
+			<OfxPropShortLabel>Inteligentne skalowanie VEGAS</OfxPropShortLabel>
+			<OfxPropLongLabel>Inteligentne skalowanie VEGAS</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Skalowanie wysokiej jakości VEGAS</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="Scale">
+					<OfxPropLabel>Skala</OfxPropLabel>
+			        <OfxPropShortLabel>Skala</OfxPropShortLabel>
+			        <OfxPropLongLabel>Skala</OfxPropLongLabel>
+					<OfxParamPropHint>Ustawia wartość skalowania</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Wrażliwość na szumy</OfxPropLabel>
+			        <OfxPropShortLabel>Wrażliwość na szumy</OfxPropShortLabel>
+			        <OfxPropLongLabel>Wrażliwość na szumy</OfxPropLongLabel>
+					<OfxParamPropHint>Poziom szumu obrazu.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Zezwól na optymalizację</OfxPropLabel>
+			        <OfxPropShortLabel>Zezwól na optymalizację</OfxPropShortLabel>
+			        <OfxPropLongLabel>Zezwól na optymalizację</OfxPropLongLabel>
+					<OfxParamPropHint>Zezwól lub zablokuj sprytną optymalizację.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Wtyczka natrafiła na błąd, który nie pozwala na dalszą pracę.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    Określony format klatki nie jest obsługiwany. W ustawieniach projektu wybierz 8- lub 32-bitowy RGBA zmiennoprzecinkowy.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Ta wtyczka wymaga OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Wtyczka natrafiła na błąd OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    Pamięć OpenCL została wyczerpana. Spróbuj ponownie z obrazami o niższej rozdzielczości lub z mniejszą ilością efektów wideo OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    Rozdzielczość projektu jest zbyt duża. Spróbuj z obrazami o niższej rozdzielczości.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_upscale">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Ampliação inteligente VEGAS</OfxPropLabel>
+			<OfxPropShortLabel>Ampliação inteligente VEGAS</OfxPropShortLabel>
+			<OfxPropLongLabel>Ampliação inteligente VEGAS</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Redimensionador de alta qualidade VEGAS</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="Scale">
+					<OfxPropLabel>Escala</OfxPropLabel>
+			        <OfxPropShortLabel>Escala</OfxPropShortLabel>
+			        <OfxPropLongLabel>Escala</OfxPropLongLabel>
+					<OfxParamPropHint>Define o valor da escala de redimensionamento.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Sensibilidade ao ruído</OfxPropLabel>
+			        <OfxPropShortLabel>Sensibilidade ao ruído</OfxPropShortLabel>
+			        <OfxPropLongLabel>Sensibilidade ao ruído</OfxPropLongLabel>
+					<OfxParamPropHint>Nível de ruído da imagem.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Habilitar aprimoramento</OfxPropLabel>
+			        <OfxPropShortLabel>Habilitar aprimoramento</OfxPropShortLabel>
+			        <OfxPropLongLabel>Habilitar aprimoramento</OfxPropLongLabel>
+					<OfxParamPropHint>Habilite ou desabilite o aprimoramento inteligente.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Ocorreu um erro no plug-in do qual não pode ser recuperado.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    O formato do quadro especificado não é compatível. Escolha RGBA de ponto flutuante de 8 bits ou 32 bits nas configurações do projeto.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Este plug-in requer OpenCL para funcionar.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Ocorreu um erro OpenCL no plug-in.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    A memória da GPU OpenCL está esgotada. Tente novamente com imagens de menor resolução, ou com menos efeitos de vídeo OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    A resolução do projeto é demasiado alta. Tente novamente com imagens de menor resolução.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

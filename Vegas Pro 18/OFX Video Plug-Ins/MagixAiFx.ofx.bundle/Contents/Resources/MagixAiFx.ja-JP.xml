@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+<OfxPlugin name="de.magix:Colorization">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS カラー化</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>モノクロの素材をカラー化します。</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="ModelNotFound">このプラグインには追加のデータが必要です。 www.vegascreativesoftware.comからダウンロードできるVEGAS AIバンドルをインストールしてください。</OfxMessage>
+			
+			<OfxParamTypeChoice name="Localization">
+				<OfxParamPropChoiceOption>このプラグインには追加のデータが必要です。 www.vegascreativesoftware.comからダウンロードできるVEGAS AIバンドルをインストールしてください。</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Preprocess">
+				<OfxParamPropChoiceOption>[なし]</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>推定のみ（出力には適用されません）</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>出力に適用</OfxParamPropChoiceOption>
+				<OfxPropLabel>輝度向上</OfxPropLabel>
+				<OfxPropShortLabel>輝度向上</OfxPropShortLabel>
+				<OfxPropLongLabel>輝度向上</OfxPropLongLabel>
+				<OfxParamPropHint>輝度を高めるための前処理</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeChoice name="Precision">
+				<OfxParamPropChoiceOption>低</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>メディア</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>高</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>入力サイズに合わせる</OfxParamPropChoiceOption>
+				<OfxPropLabel>精度</OfxPropLabel>
+				<OfxPropShortLabel>精度</OfxPropShortLabel>
+				<OfxPropLongLabel>精度</OfxPropLongLabel>
+				<OfxParamPropHint>精度と速度のトレードオフ</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeBoolean name="InvertColorA">
+				<OfxPropLabel>緑と赤を反転</OfxPropLabel>
+				<OfxPropShortLabel>緑と赤を反転</OfxPropShortLabel>
+				<OfxPropLongLabel>緑と赤を反転</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; チャンネルを反転します（緑と赤）。</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+			
+			<OfxParamTypeBoolean name="InvertColorB">
+				<OfxPropLabel>青と黄色を反転</OfxPropLabel>
+				<OfxPropShortLabel>青と黄色を反転</OfxPropShortLabel>
+				<OfxPropLongLabel>青と黄色を反転</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;b&apos; チャンネルを反転します（青と黄）。</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+
+			<OfxParamTypeDouble name="ColorShiftA">
+				<OfxPropLabel>緑と赤の間でシフト</OfxPropLabel>
+				<OfxPropShortLabel>緑と赤の間でシフト</OfxPropShortLabel>
+				<OfxPropLongLabel>緑と赤の間でシフト</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; チャンネル（緑と赤）の色の中心をシフトします。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="ColorShiftB">
+				<OfxPropLabel>青と黄色の間でシフト</OfxPropLabel>
+				<OfxPropShortLabel>青と黄色の間でシフト</OfxPropShortLabel>
+				<OfxPropLongLabel>青と黄色の間でシフト</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;b&apos; チャンネル（青と黄色）の色の中心をシフトします。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationA">
+				<OfxPropLabel>緑と赤のゲイン</OfxPropLabel>
+				<OfxPropShortLabel>緑と赤のゲイン</OfxPropShortLabel>
+				<OfxPropLongLabel>緑と赤のゲイン</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; チャンネル（緑と赤）のゲイン。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationB">
+				<OfxPropLabel>青と黄色のゲイン</OfxPropLabel>
+				<OfxPropShortLabel>青と黄色のゲイン</OfxPropShortLabel>
+				<OfxPropLongLabel>青と黄色のゲイン</OfxPropLongLabel>
+				<OfxParamPropHint>&apos;a&apos; チャンネル（青と黄色）のゲイン。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+<OfxPlugin name="de.magix:StyleTransfer">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS スタイル転送</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>有名な絵画の外観をユーザー提供のクリップに転送します。</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="Model Message">このプラグインには追加のデータが必要です。 www.vegascreativesoftware.comからダウンロードできるVEGAS AIバンドルをインストールしてください。</OfxMessage>
+			
+			<OfxParamTypeChoice name="Model not found">
+				<OfxParamPropChoiceOption>このプラグインには追加のデータが必要です。 www.vegascreativesoftware.comからダウンロードできるVEGAS AIバンドルをインストールしてください。</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Style">
+				<OfxParamPropChoiceOption>Self Portrait (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Night Alley Walk (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Great Wave of Kanagawa (Hokusai)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Fruit (Hunt)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Light (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Small Worlds 1 (Kandinsky)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Floral pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Sunrise Flowers (Lambert)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Abstract Painting (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Black and White (KLH)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Starry Night (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Pandorica Opens (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Weeping Woman (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Bark pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Font pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Leaf pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Rick and Morty</OfxParamPropChoiceOption>
+				<OfxPropLabel>スタイル</OfxPropLabel>
+				<OfxPropShortLabel>スタイル</OfxPropShortLabel>
+				<OfxPropLongLabel>スタイル</OfxPropLongLabel>
+				<OfxParamPropHint>スタイルモデルを切り替えます。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeDouble name="Mean Red">
+				<OfxPropLabel>平均 赤</OfxPropLabel>
+				<OfxPropShortLabel>平均 赤</OfxPropShortLabel>
+				<OfxPropLongLabel>平均 赤</OfxPropLongLabel>
+				<OfxParamPropHint>赤の平均値を追加します。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Green">
+				<OfxPropLabel>平均 緑</OfxPropLabel>
+				<OfxPropShortLabel>平均 緑</OfxPropShortLabel>
+				<OfxPropLongLabel>平均 緑</OfxPropLongLabel>
+				<OfxParamPropHint>緑の平均値を追加します。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Blue">
+				<OfxPropLabel>平均 青</OfxPropLabel>
+				<OfxPropShortLabel>平均 青</OfxPropShortLabel>
+				<OfxPropLongLabel>平均 青</OfxPropLongLabel>
+				<OfxParamPropHint>青の平均値を追加します。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeChoice name="Details">
+				<OfxParamPropChoiceOption>低</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>中</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>高</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>オリジナル</OfxParamPropChoiceOption>
+				<OfxPropLabel>詳細</OfxPropLabel>
+				<OfxPropShortLabel>詳細</OfxPropShortLabel>
+				<OfxPropLongLabel>詳細</OfxPropLongLabel>
+				<OfxParamPropHint>詳細レベルを切り替えます。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+
+</OfxImageEffectResource>

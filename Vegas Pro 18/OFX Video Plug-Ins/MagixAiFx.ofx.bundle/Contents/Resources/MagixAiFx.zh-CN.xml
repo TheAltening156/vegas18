@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+<OfxPlugin name="de.magix:Colorization">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS 着色</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>给黑白素材着色。</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="ModelNotFound">此插件需要附加数据。请安装VEGAS AI捆绑包。下载地址：www.vegascreativesoftware.com</OfxMessage>
+			
+			<OfxParamTypeChoice name="Localization">
+				<OfxParamPropChoiceOption>此插件需要附加数据。请安装VEGAS AI捆绑包。下载地址：www.vegascreativesoftware.com</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Preprocess">
+				<OfxParamPropChoiceOption>无</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>仅估计（不适用于输出）</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>适用于输出</OfxParamPropChoiceOption>
+				<OfxPropLabel>亮度增强</OfxPropLabel>
+				<OfxPropShortLabel>亮度增强</OfxPropShortLabel>
+				<OfxPropLongLabel>亮度增强</OfxPropLongLabel>
+				<OfxParamPropHint>进行预处理以增强亮度。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeChoice name="Precision">
+				<OfxParamPropChoiceOption>低</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>中</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>高</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>匹配输入大小</OfxParamPropChoiceOption>
+				<OfxPropLabel>精确</OfxPropLabel>
+				<OfxPropShortLabel>精确</OfxPropShortLabel>
+				<OfxPropLongLabel>精确</OfxPropLongLabel>
+				<OfxParamPropHint>在精度和速度之间进行权衡。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeBoolean name="InvertColorA">
+				<OfxPropLabel>反转绿色和红色</OfxPropLabel>
+				<OfxPropShortLabel>反转绿色和红色</OfxPropShortLabel>
+				<OfxPropLongLabel>反转绿色和红色</OfxPropLongLabel>
+				<OfxParamPropHint>反转“a”通道（绿色和红色）。</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+			
+			<OfxParamTypeBoolean name="InvertColorB">
+				<OfxPropLabel>反转蓝色和黄色</OfxPropLabel>
+				<OfxPropShortLabel>反转蓝色和黄色</OfxPropShortLabel>
+				<OfxPropLongLabel>反转蓝色和黄色</OfxPropLongLabel>
+				<OfxParamPropHint>反转“b”通道（蓝色和黄色）。</OfxParamPropHint>
+			</OfxParamTypeBoolean>
+
+			<OfxParamTypeDouble name="ColorShiftA">
+				<OfxPropLabel>在绿色和红色之间切换</OfxPropLabel>
+				<OfxPropShortLabel>在绿色和红色之间切换</OfxPropShortLabel>
+				<OfxPropLongLabel>在绿色和红色之间切换</OfxPropLongLabel>
+				<OfxParamPropHint>在“a”通道（绿色和红色）上移动颜色中心。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="ColorShiftB">
+				<OfxPropLabel>在蓝色和黄色之间切换</OfxPropLabel>
+				<OfxPropShortLabel>在蓝色和黄色之间切换</OfxPropShortLabel>
+				<OfxPropLongLabel>在蓝色和黄色之间切换</OfxPropLongLabel>
+				<OfxParamPropHint>在“b”通道（蓝色和黄色）上移动颜色中心。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationA">
+				<OfxPropLabel>绿色和红色增益</OfxPropLabel>
+				<OfxPropShortLabel>绿色和红色增益</OfxPropShortLabel>
+				<OfxPropLongLabel>绿色和红色增益</OfxPropLongLabel>
+				<OfxParamPropHint>a”通道增益（绿色和红色）。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+
+			<OfxParamTypeDouble name="ColorMagnificationB">
+				<OfxPropLabel>蓝色和黄色增益</OfxPropLabel>
+				<OfxPropShortLabel>蓝色和黄色增益</OfxPropShortLabel>
+				<OfxPropLongLabel>蓝色和黄色增益</OfxPropLongLabel>
+				<OfxParamPropHint>“a”通道增益（蓝色和黄色）。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+<OfxPlugin name="de.magix:StyleTransfer">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS 风格转移</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>将著名绘画的外观转移到用户提供的剪辑中。</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxMessage name="Model Message">此插件需要附加数据。请安装VEGAS AI捆绑包。下载地址：www.vegascreativesoftware.com</OfxMessage>
+			
+			<OfxParamTypeChoice name="Model not found">
+				<OfxParamPropChoiceOption>此插件需要附加数据。请安装VEGAS AI捆绑包。下载地址：www.vegascreativesoftware.com</OfxParamPropChoiceOption>
+			</OfxParamTypeChoice>
+			
+			<OfxParamTypeChoice name="Style">
+				<OfxParamPropChoiceOption>Self Portrait (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Night Alley Walk (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Great Wave of Kanagawa (Hokusai)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Fruit (Hunt)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Light (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Small Worlds 1 (Kandinsky)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Floral pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Sunrise Flowers (Lambert)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Abstract Painting (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Black and White (KLH)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Starry Night (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Pandorica Opens (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Weeping Woman (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Bark pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Font pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Leaf pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Rick and Morty</OfxParamPropChoiceOption>
+				<OfxPropLabel>样式</OfxPropLabel>
+				<OfxPropShortLabel>样式</OfxPropShortLabel>
+				<OfxPropLongLabel>样式</OfxPropLongLabel>
+				<OfxParamPropHint>在不同样式的模板之间切换。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeDouble name="Mean Red">
+				<OfxPropLabel>红色平均值</OfxPropLabel>
+				<OfxPropShortLabel>红色平均值</OfxPropShortLabel>
+				<OfxPropLongLabel>红色平均值</OfxPropLongLabel>
+				<OfxParamPropHint>添加红色的平均值。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Green">
+				<OfxPropLabel>绿色平均值</OfxPropLabel>
+				<OfxPropShortLabel>绿色平均值</OfxPropShortLabel>
+				<OfxPropLongLabel>绿色平均值</OfxPropLongLabel>
+				<OfxParamPropHint>添加绿色的平均值。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Blue">
+				<OfxPropLabel>蓝色平均值</OfxPropLabel>
+				<OfxPropShortLabel>蓝色平均值</OfxPropShortLabel>
+				<OfxPropLongLabel>蓝色平均值</OfxPropLongLabel>
+				<OfxParamPropHint>添加蓝色的平均值。</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeChoice name="Details">
+				<OfxParamPropChoiceOption>低</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>中</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>高</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>原始值</OfxParamPropChoiceOption>
+				<OfxPropLabel>细节</OfxPropLabel>
+				<OfxPropShortLabel>细节</OfxPropShortLabel>
+				<OfxPropLongLabel>细节</OfxPropLongLabel>
+				<OfxParamPropHint>在不同级别的细节之间切换。</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+
+</OfxImageEffectResource>

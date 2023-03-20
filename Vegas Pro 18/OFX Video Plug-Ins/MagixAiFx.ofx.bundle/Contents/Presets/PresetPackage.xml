@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfxPresetPackage>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Self Portrait (Picasso">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>0</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Black and White (KLH)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>9</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="The Starry Night (van Gogh)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>10</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="The Pandorica Opens (van Gogh)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>11</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="The Weeping Woman (Picasso)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>12</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Bark pattern">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>13</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Font pattern">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>14</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Leaf pattern">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>15</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Rick and Morty">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>16</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Night Alley Walk (Afremov)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>1</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="The Great Wave of Kanagawa (Hokusai)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>2</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Fruit (Hunt)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>3</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Light (Afremov)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>4</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Small Worlds 1 (Kandinsky)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>5</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Floral pattern">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>6</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Sunrise Flowers (Lambert)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>7</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+<OfxPreset plugin="de.magix:StyleTransfer" context="Filter" name="Abstract Painting (Picasso)">
+	<OfxPlugin>de.magix:StyleTransfer</OfxPlugin>
+	<OfxPluginVersion>1 0</OfxPluginVersion>
+	<OfxParamTypeChoice name="Style">
+		<OfxParamValue>8</OfxParamValue>
+	</OfxParamTypeChoice>
+	<OfxParamTypeDouble name="Mean Red">
+		<OfxParamValue>123.68</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Green">
+		<OfxParamValue>116.779</OfxParamValue>
+	</OfxParamTypeDouble>
+	<OfxParamTypeDouble name="Mean Blue">
+		<OfxParamValue>103.939</OfxParamValue>
+	</OfxParamTypeDouble>
+</OfxPreset>
+
+</OfxPresetPackage>

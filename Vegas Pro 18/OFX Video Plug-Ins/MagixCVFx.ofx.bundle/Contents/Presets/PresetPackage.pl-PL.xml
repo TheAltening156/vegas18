@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfxPresetPackage>
+<OfxPreset plugin="de.magix:FlickerReducer" context="Filter" name="Redukcja migotania">
+    <OfxPlugin>de.magix:FlickerReducer</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeChoice name="Mode">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="Model">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeInt name="TimeWindow">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeInt>
+    <OfxParamTypeDouble name="Sensitivity">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="Threshold">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeChoice name="Type">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>	
+</OfxPreset>
+<OfxPreset plugin="de.magix:FlickerReducer" context="Filter" name="Redukcja migotania (Upływ czasu)">
+    <OfxPlugin>de.magix:FlickerReducer</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeChoice name="Mode">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="Model">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeInt name="TimeWindow">
+      <OfxParamValue>50</OfxParamValue>
+    </OfxParamTypeInt>
+    <OfxParamTypeDouble name="Sensitivity">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="Threshold">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeChoice name="Type">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>	
+</OfxPreset>
+<OfxPreset plugin="de.magix:FlickerReducer" context="Filter" name="Dodaj migotanie 50 Hz">
+    <OfxPlugin>de.magix:FlickerReducer</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeChoice name="Mode">
+      <OfxParamValue>2</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeDouble name="Frequency">
+      <OfxParamValue>50</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="Sensitivity">
+      <OfxParamValue>0.2</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeChoice name="Type">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>	
+</OfxPreset>
+<OfxPreset plugin="de.magix:FlickerReducer" context="Filter" name="Dodaj migotanie 60 Hz">
+    <OfxPlugin>de.magix:FlickerReducer</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeChoice name="Mode">
+      <OfxParamValue>2</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeDouble name="Frequency">
+      <OfxParamValue>60</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="Sensitivity">
+      <OfxParamValue>0.2</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeChoice name="Type">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>	
+</OfxPreset>
+<OfxPreset plugin="de.magix:FlickerReducer" context="Filter" name="Dodaj migotanie celuloidu">
+    <OfxPlugin>de.magix:FlickerReducer</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeChoice name="Mode">
+      <OfxParamValue>2</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeDouble name="Frequency">
+      <OfxParamValue>00</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="Sensitivity">
+      <OfxParamValue>0.3</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeChoice name="Type">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>	
+</OfxPreset>
+
+</OfxPresetPackage>

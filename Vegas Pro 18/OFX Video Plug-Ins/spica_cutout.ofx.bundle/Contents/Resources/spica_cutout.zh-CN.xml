@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_zoom">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 智能缩放</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS 智能缩放</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS 智能缩放</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>VEGAS高质量缩放。</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="LocationAndZoom">
+					<OfxPropLabel>抠图</OfxPropLabel>
+			        <OfxPropShortLabel>抠图</OfxPropShortLabel>
+			        <OfxPropLongLabel>抠图</OfxPropLongLabel>
+					<OfxParamPropHint>剪裁的位置和缩放。</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>噪声灵敏度</OfxPropLabel>
+			        <OfxPropShortLabel>噪声灵敏度</OfxPropShortLabel>
+			        <OfxPropLongLabel>噪声灵敏度</OfxPropLongLabel>
+					<OfxParamPropHint>图像的噪声级别。</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>启用增强功能</OfxPropLabel>
+			        <OfxPropShortLabel>启用增强功能</OfxPropShortLabel>
+			        <OfxPropLongLabel>启用增强功能</OfxPropLongLabel>
+					<OfxParamPropHint>启用或禁用智能增强。</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    插件发生无法复原的错误。
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    不支持指定的帧格式。请从项目设置中选择8位或32位浮点RGBA。
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    此插件需要OpenCL才能运行。
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    此插件发生OpenCL错误。
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    OpenCL GPU内存已耗尽。 请使用较低分辨率的图像或较少的OpenCL视频效果重试。
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    此项目分辨率过大。请使用较低分辨率的图像重试。
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

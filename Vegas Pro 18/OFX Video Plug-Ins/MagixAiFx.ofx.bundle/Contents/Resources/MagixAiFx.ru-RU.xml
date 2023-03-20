@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+<OfxPlugin name="de.magix:StyleTransfer">
+
+	<OfxResourceSet ofxHost="default">
+		<OfxPropLabel>VEGAS Style Transfer</OfxPropLabel>
+
+		<OfxImageEffectPluginPropGrouping>VEGAS\Ai</OfxImageEffectPluginPropGrouping>
+		<OfxPropPluginDescription>Перенос стиля известных картин в поьзовательские клипы.</OfxPropPluginDescription>
+		<OfxImageEffectContext name="default">
+		</OfxImageEffectContext>
+
+		<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+			<OfxParamTypeChoice name="Style">
+				<OfxParamPropChoiceOption>Self Portrait (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Night Alley Walk (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Great Wave of Kanagawa (Hokusai)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Fruit (Hunt)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Light (Afremov)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Small Worlds 1 (Kandinsky)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Floral pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Sunrise Flowers (Lambert)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Abstract Painting (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Black and White (KLH)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Starry Night (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Pandorica Opens (van Gogh)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>The Weeping Woman (Picasso)</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Bark pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Font pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Leaf pattern</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Rick and Morty</OfxParamPropChoiceOption>
+				<OfxPropLabel>Стиль</OfxPropLabel>
+				<OfxPropShortLabel>Стиль</OfxPropShortLabel>
+				<OfxPropLongLabel>Стиль</OfxPropLongLabel>
+				<OfxParamPropHint>Переключение между моделями разных стилей.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+			<OfxParamTypeDouble name="Mean Red">
+				<OfxPropLabel>Среднее значение красного</OfxPropLabel>
+				<OfxPropShortLabel>Среднее значение красного</OfxPropShortLabel>
+				<OfxPropLongLabel>Среднее значение красного</OfxPropLongLabel>
+				<OfxParamPropHint>Добавляет среднее значение красного.</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Green">
+				<OfxPropLabel>Среднее значение зелёного</OfxPropLabel>
+				<OfxPropShortLabel>Среднее значение зелёного</OfxPropShortLabel>
+				<OfxPropLongLabel>Среднее значение зелёного</OfxPropLongLabel>
+				<OfxParamPropHint>Добавляет среднее значение зелёного.</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeDouble name="Mean Blue">
+				<OfxPropLabel>Среднее значение синего</OfxPropLabel>
+				<OfxPropShortLabel>Среднее значение синего</OfxPropShortLabel>
+				<OfxPropLongLabel>Среднее значение синего</OfxPropLongLabel>
+				<OfxParamPropHint>Добавляет среднее значение синего.</OfxParamPropHint>
+			</OfxParamTypeDouble>
+			
+			<OfxParamTypeChoice name="Details">
+				<OfxParamPropChoiceOption>Темные</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Средний</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Высокий</OfxParamPropChoiceOption>
+				<OfxParamPropChoiceOption>Исходник</OfxParamPropChoiceOption>
+				<OfxPropLabel>Подробнее</OfxPropLabel>
+				<OfxPropShortLabel>Подробнее</OfxPropShortLabel>
+				<OfxPropLongLabel>Подробнее</OfxPropLongLabel>
+				<OfxParamPropHint>Переключение между различными уровнями детализации.</OfxParamPropHint>
+			</OfxParamTypeChoice>
+
+		</OfxImageEffectContext>
+	</OfxResourceSet>
+</OfxPlugin>
+
+</OfxImageEffectResource>

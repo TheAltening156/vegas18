@@ -1,0 +1,12 @@
+﻿{
+  "CreateLoginUrl": "https://staging-www.magix-hub.com/login/createloginurl",
+  "CloseLoginBrowserUrl": "https://staging-www.magix-hub.com/login/close",
+  "GetTokenUrl": "https://staging-www.magix-hub.com/login/gettoken",
+  "ApiHostScheme": "http",
+  "OAuthHostName": "mxonlinehub-backend-staging.azurewebsites.net",
+  "ApiHostName": "staging-www.magix-hub.com",
+  "CallbackUrl": "https://www.magix.com",
+  "ClientId": "mxonlinehubclient",
+  "LogFilePath": "%appdata%\\VEGAS\\HubDB\\MAGIXHUBsdk.log",
+  "UseDetailedLogging": "false"
+}
