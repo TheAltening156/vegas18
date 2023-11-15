@@ -5,3 +5,6 @@ Free Vegas Pro 18
   - Extract "Vegas Pro 18"
   - execute vegas180.exe
 # And That's All
+# Contact Me
+  - Discord: TheAltening#9143 or thealtening
+  - Mail: not for now
