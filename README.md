@@ -6,5 +6,4 @@
   - execute vegas180.exe
   - And That's All !
 # Contact 
-  - Discord: TheAltening#9143 or thealtening
-  - Mail: not for now
+  - Discord: thealtening
